@@ -1,0 +1,13 @@
+body {
+  margin: 0;
+
+  h1 {
+    font-weight: 300;
+  }
+
+  .bolded-phrase {
+    font-weight: 500;
+    display: flex;
+    flex-direction: column;
+  }
+}

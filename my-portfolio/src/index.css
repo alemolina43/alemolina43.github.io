@@ -1,10 +1,10 @@
 :root {
-  font-family: "Happy Monkey", system-ui;
-  font-weight: 400;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
   font-style: normal;
 
   color-scheme: light dark;
-  #282a29 background-color: #faefe6;
+  background-color: #faefe6;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
