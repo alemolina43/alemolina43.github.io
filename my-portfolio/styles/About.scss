@@ -1,0 +1,21 @@
+#about {
+  margin: 0;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  background-color: #fd883d;
+  padding: 1em;
+  font-size: 1.5em;
+  align-items: center;
+
+  .summary {
+    padding-left: 2em;
+  }
+
+  .profile {
+    width: 11em; /* or any fixed width */
+    height: 17em; /* taller than wide = oval */
+    object-fit: cover; /* keeps image from stretching */
+    border-radius: 50% / 25%;
+  }
+}

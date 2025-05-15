@@ -5,17 +5,19 @@ import { FaDiscord } from "react-icons/fa";
 function Contact() {
   return (
     <>
-      <h2>
-        <strong>Let&apos;s talk!</strong>
-      </h2>
-      <p>website</p>
-      <p>email</p>
-      <p>phone</p>
-      <footer>
-        <FaLinkedin />
-        <FaGithub />
-        <FaDiscord />
-      </footer>
+      <section id="contact">
+        <h2>
+          <span className="highlight">Let&apos;s talk!</span>
+        </h2>
+        <p>website</p>
+        <p>email</p>
+        <p>phone</p>
+        <footer>
+          <FaLinkedin />
+          <FaGithub />
+          <FaDiscord />
+        </footer>
+      </section>
     </>
   );
 }

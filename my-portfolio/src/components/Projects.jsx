@@ -1,8 +1,8 @@
 function Projects() {
   return (
-    <>
+    <section id="projects">
       <h2>
-        <strong>Take a look at my projects!</strong>
+        <span className="highlight">Take a look at my projects!</span>
       </h2>
       <a
         href="https://github.com/J-0-d-a-1/munchMatch"
@@ -18,7 +18,7 @@ function Projects() {
       >
         Quizzas
       </a>
-    </>
+    </section>
   );
 }
 

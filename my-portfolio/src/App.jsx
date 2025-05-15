@@ -1,5 +1,6 @@
 import "../styles/App.scss";
 import NavBar from "./components/NavBar";
+import LandinPage from "./components/LandingPage";
 import About from "./components/About";
 import Projects from "./components/Projects";
 import Articles from "./components/Articles";
@@ -9,14 +10,7 @@ function App() {
   return (
     <>
       <NavBar />
-      <div className="phrase-container">
-        <h1>
-          Building websites that won’t crash—
-          <span className="bolded-phrase">
-            unless you&apos;re trying to break them!
-          </span>
-        </h1>
-      </div>
+      <LandinPage />
       <About />
       <Projects />
       <Articles />

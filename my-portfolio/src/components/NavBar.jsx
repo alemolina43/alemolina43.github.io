@@ -6,21 +6,29 @@ import "../../styles/NavBar.scss";
 
 function NavBar() {
   return (
-    <Navbar expand="lg" className="bg-body-tertiary">
-      <Container>
-        <Navbar.Brand href="#home">
+    <nav className="nav-bar">
+      <div className="logo">
+        <a href="#home" className="navbar-brand">
           <LuBrainCircuit />
           Ale Gutierrez
-        </Navbar.Brand>
-        <Navbar.Collapse id="basic-navbar-nav">
-          <Nav className="me-auto">
-            <Nav.Link href="#about">About</Nav.Link>
-            <Nav.Link href="#projects">Projects</Nav.Link>
-            <Nav.Link href="#contact">Contact</Nav.Link>
-          </Nav>
-        </Navbar.Collapse>
-      </Container>
-    </Navbar>
+        </a>
+      </div>
+
+      <div className="nav">
+        <a href="#about" className="nav-link">
+          About
+        </a>
+        <a href="#projects" className="nav-link">
+          Projects
+        </a>
+        <a href="#writing" className="nav-link">
+          Writing
+        </a>
+        <a href="#contact" className="nav-link">
+          Contact
+        </a>
+      </div>
+    </nav>
   );
 }
 
