@@ -5,6 +5,7 @@
   margin: 1.5em 1em 0em;
   align-items: center;
   h2 {
+    padding-left: 0.5em;
     font-size: 5em;
     width: 45vw;
     padding-right: 1em;
@@ -14,6 +15,7 @@
   .projects-list {
     display: flex;
     flex-wrap: wrap; //allow the projects to be next to each other if they fit
+    justify-content: center;
     gap: 1.5em;
     list-style: none;
     padding: 0;

@@ -1,27 +1,69 @@
 #writing {
   height: 100vh;
-  // width: 100%;
   background-color: #553566;
-  padding: 2em;
+  padding-left: 3em;
+  padding-top: 1em;
   display: flex;
   flex-direction: column;
 
   h2 {
     font-size: 5em;
+    color: #d46bca;
   }
-  .article-info {
-    font-size: 1.5em;
-    position: relative;
-    background-color: white;
-    border-radius: 20px;
-    border: solid 2px #282a29;
-    padding: 1em 1em;
-    z-index: 1;
+
+  .articles-list {
     display: flex;
-    flex-direction: column;
-    flex: 1 1 calc(33.33% - 2em);
-    max-width: calc(33.33% - 2em); // prevent overflow
-    max-height: 40vh;
-    box-sizing: border-box;
+    flex-wrap: wrap; //allow the projects to be next to each other if they fit
+    justify-content: center;
+    gap: 1.5em;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+}
+
+.article-container {
+  flex: 1 1 calc(33.33% - 2em); // allow 3 per row with gap
+  display: flex;
+  flex-direction: column;
+  max-width: calc(33.33% - 2em); // prevent overflow
+  box-sizing: border-box;
+
+  .article-thumbnail {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 5 / 3;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+
+  .article-info {
+    padding: 0 1em;
+    a {
+      font-size: 1.1em;
+      color: #faefe6;
+      text-align: center;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+
+      &:hover {
+        color: #d46bca;
+      }
+    }
+  }
+}
+
+@media (max-width: 1300px) {
+  .article-container {
+    flex: 1 1 calc(50% - 2em);
+    max-width: calc(50% - 2em);
+  }
+}
+
+@media (max-width: 600px) {
+  .article-container {
+    flex: 1 1 100%;
+    max-width: 100%;
   }
 }
