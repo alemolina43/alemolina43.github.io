@@ -3,7 +3,7 @@ import NavBar from "./components/NavBar";
 import LandinPage from "./components/LandingPage";
 import About from "./components/About";
 import ProjectList from "./components/ProjectList";
-import Articles from "./components/Articles";
+import ArticlesList from "./components/ArticlesList";
 import Contact from "./components/Contact";
 
 function App() {
@@ -13,7 +13,7 @@ function App() {
       <LandinPage />
       <About />
       <ProjectList />
-      <Articles />
+      <ArticlesList />
       <Contact />
     </>
   );

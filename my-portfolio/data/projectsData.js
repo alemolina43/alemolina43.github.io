@@ -1,7 +1,7 @@
-import MunchMatch from "../src/assets/munchMatch-logo.png";
+import MunchMatch from "../src/assets/munchMatch.png";
 import Quizzas from "../src/assets/quizzas.png";
 import Tweeter from "../src/assets/tweeter.png";
-import TinnyApp from "../src/assets/tinnyApp.png";
+import TinnyApp from "../src/assets/tinyApp.png";
 
 const projectsData = [
   {

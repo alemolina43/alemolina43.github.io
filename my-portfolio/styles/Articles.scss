@@ -1,0 +1,22 @@
+#writing {
+  height: 100vh;
+  width: 90vw;
+
+  h2 {
+    font-size: 5em;
+  }
+  .article-info {
+    font-size: 1.5em;
+    position: relative;
+    background-color: white;
+    border-radius: 20px;
+    border: solid 2px #282a29;
+    padding: 1em 1em;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 calc(33.33% - 2em);
+    max-width: calc(33.33% - 2em); // prevent overflow
+    box-sizing: border-box;
+  }
+}

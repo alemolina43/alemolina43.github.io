@@ -1,5 +1,64 @@
 #projects {
+  display: flex;
+  height: 100vh;
+  width: 90vw;
+  margin: 1.5em 1em 0em;
+  align-items: center;
+
   h2 {
-    font-size: 3em;
+    font-size: 5em;
+    width: 45vw;
+    padding-right: 1em;
+    margin: 0;
+  }
+
+  .projects-list {
+    display: flex;
+    flex-wrap: wrap; //allow the projects to be next to each other if they fit
+    gap: 1.5em;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+}
+
+.project-container {
+  flex: 1 1 calc(33.33% - 2em); // allow 3 per row with gap
+  display: flex;
+  flex-direction: column;
+  max-width: calc(33.33% - 2em); // prevent overflow
+  box-sizing: border-box;
+
+  .project-thumbnail {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 5 / 3;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+
+  .project-info {
+    padding: 0 1em;
+    .divider {
+      border-bottom: 2px solid #d46bca;
+      margin-top: 0;
+    }
+    a {
+      font-size: 1.1em;
+    }
+  }
+}
+
+@media (max-width: 1300px) {
+  .project-container {
+    flex: 1 1 calc(50% - 2em);
+    max-width: calc(50% - 2em);
+  }
+}
+
+@media (max-width: 600px) {
+  .project-container {
+    flex: 1 1 100%;
+    max-width: 100%;
   }
 }

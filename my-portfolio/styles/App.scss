@@ -8,4 +8,14 @@ body {
   .highlight {
     font-weight: 600;
   }
+
+  a {
+    margin-bottom: 0;
+    text-decoration: none;
+    color: #553566;
+    margin: 0;
+    &:hover {
+      color: #d46bca;
+    }
+  }
 }
