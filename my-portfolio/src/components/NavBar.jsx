@@ -14,20 +14,29 @@ function NavBar() {
         </a>
       </div>
 
-      <div className="nav">
-        <a href="#about" className="nav-link">
-          About
-        </a>
-        <a href="#projects" className="nav-link">
-          Projects
-        </a>
-        <a href="#writing" className="nav-link">
-          Writing
-        </a>
-        <a href="#contact" className="nav-link">
-          Contact
-        </a>
-      </div>
+      <ul className="nav">
+        <li>
+          <a href="#about" className="nav-link">
+            About
+          </a>
+        </li>
+        <li>
+          <a href="#projects" className="nav-link">
+            Projects
+          </a>
+        </li>
+        <li>
+          <a href="#writing" className="nav-link">
+            Writing
+          </a>
+        </li>
+        <li>
+          {" "}
+          <a href="#contact" className="nav-link">
+            Contact
+          </a>
+        </li>
+      </ul>
     </nav>
   );
 }

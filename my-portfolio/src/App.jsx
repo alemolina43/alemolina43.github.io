@@ -2,7 +2,7 @@ import "../styles/App.scss";
 import NavBar from "./components/NavBar";
 import LandinPage from "./components/LandingPage";
 import About from "./components/About";
-import Projects from "./components/Projects";
+import ProjectList from "./components/ProjectList";
 import Articles from "./components/Articles";
 import Contact from "./components/Contact";
 
@@ -12,7 +12,7 @@ function App() {
       <NavBar />
       <LandinPage />
       <About />
-      <Projects />
+      <ProjectList />
       <Articles />
       <Contact />
     </>

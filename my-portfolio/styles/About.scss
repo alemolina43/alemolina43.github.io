@@ -2,19 +2,24 @@
   margin: 0;
   display: flex;
   flex-direction: row;
-  width: 100%;
+  height: 100vh;
+  width: 100vw;
   background-color: #fd883d;
-  padding: 1em;
-  font-size: 1.5em;
+  padding: 2em;
+  font-size: 1.7em;
   align-items: center;
 
   .summary {
     padding-left: 2em;
+    width: 60vw;
+    h2 {
+      font-size: 3em;
+    }
   }
 
   .profile {
-    width: 11em; /* or any fixed width */
-    height: 17em; /* taller than wide = oval */
+    width: 15em; /* or any fixed width */
+    height: 21em; /* taller than wide = oval */
     object-fit: cover; /* keeps image from stretching */
     border-radius: 50% / 25%;
   }

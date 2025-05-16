@@ -5,10 +5,10 @@
   height: 4em;
   position: sticky;
   top: 0;
+  width: 100vw;
   z-index: 1000;
 
   display: flex;
-  width: 100vw;
   flex-direction: row;
   justify-content: space-between;
 
@@ -31,6 +31,7 @@
     margin-left: 1em;
   }
   .nav {
+    list-style-type: none;
     display: flex;
     gap: 1.5em;
     margin-right: 2.5em;
