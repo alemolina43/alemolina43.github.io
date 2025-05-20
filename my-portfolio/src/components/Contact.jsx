@@ -3,7 +3,7 @@ import Eye from "../assets/eye.png";
 import Star from "../assets/star.png";
 
 import "../../styles/Contact.scss";
-import { FaLinkedin, FaGithub, FaDiscord } from "react-icons/fa";
+import { FaLinkedin, FaGithub } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
 
 function Contact() {
