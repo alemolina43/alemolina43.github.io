@@ -13,6 +13,19 @@ function NavBar() {
         </a>
       </div>
 
+      {/* <div
+        className="menu-toggle"
+        id="mobile-menu" 
+        onClick={toggleMenu} 
+        aria-controls="main-navigation" 
+        aria-expanded={isMenuOpen} 
+      >
+        <span className="bar">About</span>
+        <span className="bar">Projects</span>
+        <span className="bar">Writig</span>
+        <span className="bar">Contact</span>
+      </div> */}
+
       <ul className="nav">
         <li>
           <a href="#about" className="nav-link">
