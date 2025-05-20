@@ -1,3 +1,5 @@
+import { useState, useEffect } from "react";
+
 import { LuBrainCircuit } from "react-icons/lu";
 import "../../styles/NavBar.scss";
 

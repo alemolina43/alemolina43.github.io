@@ -1,25 +1,100 @@
 #about {
   height: 100vh;
-  padding-left: 1em;
+  padding: 1em;
   display: flex;
   flex-direction: row;
   background-color: #fd883d;
   font-size: 1.7em;
   align-items: center;
+  justify-content: center; /* Center content horizontally */
+  box-sizing: border-box; /* Crucial for padding/width calculations */
 
   .summary {
     padding-left: 2em;
     width: 60vw;
+    flex-shrink: 1; /* Allow summary to shrink if needed */
+    flex-grow: 1; /* Allow summary to grow and take space */
+    text-align: left; /* Default text alignment */
     h2 {
       font-size: 3em;
+      margin-bottom: 0.5em;
     }
   }
 
   .profile {
-    width: 15em; /* or any fixed width */
-    height: 21em; /* taller than wide = oval */
+    width: clamp(12em, 20vw, 15em);
+    height: auto;
     object-fit: cover; /* keeps image from stretching */
     border-radius: 50% / 25%;
     padding-left: 1em;
+    flex-shrink: 0; /* Prevent the image from shrinking too much */
+    display: block; /* Important for images */
+  }
+}
+
+/* --- Media Queries for Smaller Screens --- */
+
+/* For screens smaller than 768px */
+@media (max-width: 768px) {
+  #about {
+    flex-direction: column; /* Stack profile and summary vertically */
+    justify-content: center; /* Center content vertically when stacked */
+    padding: 2em 1em; /* Adjust padding for tablets */
+    height: auto; // Allow section to expand
+    min-height: 100vh; // Ensure it still takes full viewport height if content is short
+  }
+
+  #about .profile {
+    width: clamp(8em, 25vw, 13em); /* Adjust size for tablets */
+    height: auto; /* Re-calculate height based on new width */
+    padding-left: 0; /* Remove left padding when stacked */
+    margin-bottom: 1.5em; /* Add space between image and summary */
+    order: 1; /* Place image first in the column */
+  }
+
+  #about .summary {
+    padding-left: 0; /* Remove left padding when stacked */
+    width: 100%; /* Take full width of parent */
+    text-align: center; /* Center text when stacked */
+    order: 2; /* Place summary second in the column */
+
+    h2 {
+      font-size: clamp(2rem, 4vw, 2.5rem); /* Adjust H2 size for tablets */
+    }
+
+    p {
+      font-size: clamp(
+        1rem,
+        1.5vw,
+        1.2rem
+      ); /* Adjust paragraph size for tablets */
+    }
+  }
+}
+
+/* Mobile breakpoint */
+@media (max-width: 480px) {
+  #about {
+    padding: 1.5em 0.8em; /* Reduce padding for very small screens */
+  }
+
+  #about .profile {
+    width: clamp(8em, 30vw, 12em); /* Smaller profile picture for mobile */
+    height: auto;
+    margin-bottom: 1em; /* Adjust spacing */
+  }
+
+  #about .summary {
+    padding: 0 0.5em; /* Add slight horizontal padding within summary */
+
+    h2 {
+      font-size: clamp(1.5rem, 5vw, 2rem); /* Even smaller H2 for mobile */
+      margin-bottom: 0.8em;
+    }
+
+    p {
+      font-size: clamp(0.8rem, 2.5vw, 1rem); /* smaller paragraphs for mobile */
+      margin-bottom: 0.8em;
+    }
   }
 }
