@@ -22,9 +22,20 @@ function Contact() {
             <span>alexmarket43@gmail.com</span>
           </div>
           <footer>
-            <FaLinkedin />
-            <FaGithub />
-            <FaDiscord />
+            <a
+              href="https://www.linkedin.com/in/alexmarket43/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <FaLinkedin />
+            </a>
+            <a
+              href="https://github.com/alemolina43"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <FaGithub />
+            </a>
           </footer>
         </div>
       </section>

@@ -1,55 +1,27 @@
-import { useState, useEffect } from "react";
+import { Navbar, Nav, Container } from "react-bootstrap";
 
 import { LuBrainCircuit } from "react-icons/lu";
 import "../../styles/NavBar.scss";
 
 function NavBar() {
   return (
-    <nav className="nav-bar">
-      <div className="logo">
-        <a href="#home" className="navbar-brand">
-          <LuBrainCircuit />
+    <Navbar expand="lg" variant="light" sticky="top">
+      <Container>
+        <Navbar.Brand href="#home">
+          <LuBrainCircuit style={{ marginRight: "8px" }} />
           Ale Gutierrez
-        </a>
-      </div>
-
-      {/* <div
-        className="menu-toggle"
-        id="mobile-menu" 
-        onClick={toggleMenu} 
-        aria-controls="main-navigation" 
-        aria-expanded={isMenuOpen} 
-      >
-        <span className="bar">About</span>
-        <span className="bar">Projects</span>
-        <span className="bar">Writig</span>
-        <span className="bar">Contact</span>
-      </div> */}
-
-      <ul className="nav">
-        <li>
-          <a href="#about" className="nav-link">
-            About
-          </a>
-        </li>
-        <li>
-          <a href="#projects" className="nav-link">
-            Projects
-          </a>
-        </li>
-        <li>
-          <a href="#writing" className="nav-link">
-            Writing
-          </a>
-        </li>
-        <li>
-          {" "}
-          <a href="#contact" className="nav-link">
-            Contact
-          </a>
-        </li>
-      </ul>
-    </nav>
+        </Navbar.Brand>
+        <Navbar.Toggle aria-controls="main-navbar-nav" />
+        <Navbar.Collapse id="main-navbar-nav">
+          <Nav className="ms-auto">
+            <Nav.Link href="#about">About</Nav.Link>
+            <Nav.Link href="#projects">Projects</Nav.Link>
+            <Nav.Link href="#writing">Writing</Nav.Link>
+            <Nav.Link href="#contact">Contact</Nav.Link>
+          </Nav>
+        </Navbar.Collapse>
+      </Container>
+    </Navbar>
   );
 }
 

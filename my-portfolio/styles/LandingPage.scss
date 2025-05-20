@@ -14,17 +14,28 @@
     font-weight: 200;
     margin-left: 1em;
     margin: 0;
+    font-size: clamp(2rem, 5vw, 3rem);
+    word-break: break-word;
+    max-width: 100%;
+    flex-shrink: 1;
   }
 
   .bolded-phrase {
     font-weight: 600;
-    display: flex;
-    flex-direction: column;
+    display: block;
+    margin-top: 0.2em;
   }
 
   .avatar {
-    width: 11em;
+    width: clamp(10m, 15vw, 13em);
     margin-right: 1em;
+    flex-shrink: 0;
+
+    img {
+      max-width: 100%; /* Ensure image scales down */
+      height: auto; /* Maintain aspect ratio */
+      display: block; /* Remove extra space below image */
+    }
   }
 }
 
@@ -37,11 +48,12 @@
   }
 
   .landing-page h1 {
-    font-size: 0.8em; /* Adjust h1 size */
+    font-size: clamp(1.8rem, 4.5vw, 2.5rem);
+    margin-bottom: 1em;
   }
 
   .landing-page .avatar {
-    width: 8em; /* Make avatar smaller */
+    width: clamp(8em, 20vw, 10em);
     margin: 0; /* Remove horizontal margin when stacked */
   }
 }
