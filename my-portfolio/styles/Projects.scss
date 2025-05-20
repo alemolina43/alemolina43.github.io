@@ -15,7 +15,6 @@
   .projects-list {
     display: flex;
     flex-wrap: wrap; //allow the projects to be next to each other if they fit
-    justify-content: center;
     gap: 1.5em;
     list-style: none;
     padding: 0;
@@ -42,10 +41,12 @@
     padding: 0 1em;
     .divider {
       border-bottom: 2px solid #d46bca;
-      margin-top: 0;
     }
     a {
       font-size: 1.1em;
+      h3 {
+        margin: 0.2em;
+      }
     }
   }
 }

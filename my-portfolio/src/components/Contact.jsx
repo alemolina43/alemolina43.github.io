@@ -10,23 +10,23 @@ function Contact() {
   return (
     <>
       <section id="contact">
-        <h2 className="highlight">Let&apos;s talk!</h2>
+        <div className="column">
+          <img src={Flower} />
+          <img src={Eye} />
+          <img src={Star} />
+        </div>
         <div className="contact-info">
-          <div className="column">
-            <img src={Flower} />
-            <img src={Eye} />
-            <img src={Star} />
-          </div>
+          <h2 className="highlight">Let&apos;s talk!</h2>
           <div className="contact-method">
             <MdEmail />
             <span>alexmarket43@gmail.com</span>
           </div>
+          <footer>
+            <FaLinkedin />
+            <FaGithub />
+            <FaDiscord />
+          </footer>
         </div>
-        <footer>
-          <FaLinkedin />
-          <FaGithub />
-          <FaDiscord />
-        </footer>
       </section>
     </>
   );
