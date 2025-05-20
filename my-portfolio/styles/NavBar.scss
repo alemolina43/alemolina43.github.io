@@ -1,4 +1,10 @@
 .navbar {
   font-family: "Parkinsans", sans-serif;
-  background-color: #f49e7e;
+  background-color: #d8c5da;
+
+  img {
+    width: 5em;
+    height: 4em; // Let height adjust based on width
+    aspect-ratio: 1 / 2;
+  }
 }
