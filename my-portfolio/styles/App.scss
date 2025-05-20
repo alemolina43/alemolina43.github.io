@@ -3,6 +3,9 @@ body {
   padding: 0;
   width: 100vw; /* Ensure full viewport width */
   overflow-x: hidden;
+  font-family: "Parkinsans", sans-serif;
+  background-color: #faefe6;
+  color: #282a29;
 
   h2 {
     font-weight: 300;
@@ -10,15 +13,5 @@ body {
 
   .highlight {
     font-weight: 600;
-  }
-
-  a {
-    margin-bottom: 0;
-    text-decoration: none;
-    color: #553566;
-    margin: 0;
-    &:hover {
-      color: #d46bca;
-    }
   }
 }

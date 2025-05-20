@@ -36,9 +36,9 @@
     text-align: center; /* Center content horizontally */
     h2 {
       font-size: 3em;
-      // word-break: break-word; /* Allows long words to break */
       max-width: 90%; /* Ensure heading doesn't overflow */
       text-align: center;
+      margin-bottom: 1em;
     }
     .contact-method {
       display: flex;
@@ -67,6 +67,12 @@
       flex-wrap: wrap; /* Allow icons to wrap */
       justify-content: center; /* Center icons when wrapped */
       max-width: 100%; /* Prevent footer from overflowing */
+      svg {
+        color: #282a29;
+        &:hover {
+          color: #d46bca;
+        }
+      }
     }
   }
 }
