@@ -1,6 +1,8 @@
 import Avatar from "../assets/avatar.png";
-import { FaLinkedin, FaGithub } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
+import { IoLogoLinkedin } from "react-icons/io";
+import { BiLogoGithub } from "react-icons/bi";
+
 import "../../styles/LandingPage.scss";
 
 function LandinPage() {
@@ -20,20 +22,22 @@ function LandinPage() {
         </div>
       </div>
       <footer>
-        <MdEmail />
+        <a href="mailto:alexmarket43@gmail.com">
+          <MdEmail />
+        </a>
         <a
           href="https://www.linkedin.com/in/alexmarket43/"
           target="_blank"
           rel="noreferrer"
         >
-          <FaLinkedin />
+          <IoLogoLinkedin />
         </a>
         <a
           href="https://github.com/alemolina43"
           target="_blank"
           rel="noreferrer"
         >
-          <FaGithub />
+          <BiLogoGithub />
         </a>
       </footer>
     </section>

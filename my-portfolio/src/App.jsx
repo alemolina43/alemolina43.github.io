@@ -22,7 +22,7 @@ function App() {
     return () => {
       clearTimeout(alert);
     };
-  }, []);
+  }, []); // show alert for 7 seconds and dissapear
 
   if (isLoading) {
     return <Loading />; // Show the spinner while isLoading is true
@@ -34,8 +34,7 @@ function App() {
       {showAlert && (
         <Alert key="primary" variant="primary">
           This is my digital playground where I&apos;m constantly experimenting
-          and building new things. Expect to see fresh projects and updates
-          regularly
+          and building new things. Expect to see changes regularly.
         </Alert>
       )}
       <LandinPage />

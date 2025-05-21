@@ -8,12 +8,14 @@
   padding: 0 2em;
   justify-content: center;
 }
+
 .header-container {
   display: flex;
   flex-direction: row;
   justify-content: center;
   font-size: 3em;
   align-items: center;
+  margin-bottom: 1em;
 
   h1 {
     font-weight: 200;
@@ -41,6 +43,21 @@
       max-width: 100%; /* Ensure image scales down */
       height: auto; /* Maintain aspect ratio */
       display: block; /* Remove extra space below image */
+    }
+  }
+}
+
+footer {
+  justify-content: flex-end;
+  align-items: center;
+  a {
+    padding: 0.4;
+    font-size: 3em;
+    text-decoration: none;
+    color: #282a29;
+
+    &:hover {
+      color: #d46bca;
     }
   }
 }
