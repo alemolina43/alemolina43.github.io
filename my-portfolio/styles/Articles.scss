@@ -17,7 +17,6 @@
   .articles-list {
     display: flex;
     flex-wrap: wrap; //allow the articles to be next to each other if they fit
-    justify-content: center;
     gap: 1.5em;
     list-style: none;
     padding: 0;

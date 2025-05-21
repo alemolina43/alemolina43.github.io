@@ -7,7 +7,6 @@ import LandinPage from "./components/LandingPage";
 import About from "./components/About";
 import ProjectList from "./components/ProjectList";
 import ArticlesList from "./components/ArticlesList";
-import Contact from "./components/Contact";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "../styles/App.scss";
 
@@ -43,7 +42,6 @@ function App() {
       <About />
       <ProjectList />
       <ArticlesList />
-      <Contact />
     </>
   );
 }

@@ -2,13 +2,18 @@
   height: 100vh;
   width: 100%;
   display: flex;
+  flex-direction: column;
+  box-sizing: border-box; /* Include padding in the width calculation */
+  text-align: center; /* Center content horizontally */
+  padding: 0 2em;
+  justify-content: center;
+}
+.header-container {
+  display: flex;
   flex-direction: row;
   justify-content: center;
   font-size: 3em;
   align-items: center;
-  box-sizing: border-box; /* Include padding in the width calculation */
-  text-align: center; /* Center content horizontally */
-  padding: 0 2em;
 
   h1 {
     font-weight: 200;
@@ -44,16 +49,16 @@
 
 /* For screens smaller than 768px */
 @media (max-width: 768px) {
-  .landing-page {
+  .header-container {
     padding: 1em; /* Adjust padding for tablet */
   }
 
-  .landing-page h1 {
+  .header-container h1 {
     font-size: clamp(1.8rem, 4.5vw, 2.5rem);
     margin-bottom: 1em;
   }
 
-  .landing-page .avatar {
+  .header-container .avatar {
     width: clamp(8em, 20vw, 10em);
     margin: 0; /* Remove horizontal margin when stacked */
   }
@@ -61,21 +66,21 @@
 
 /* Mobile breakpoint */
 @media (max-width: 480px) {
-  .landing-page {
+  .header-container {
     padding: 1em; /* Reduce padding for very small screens */
     justify-content: center; /* Center content vertically on small screens */
   }
 
-  .landing-page h1 {
+  .header-container h1 {
     font-size: clamp(1.5rem, 6vw, 2.5rem); /* Smaller H1 for mobile */
     margin-bottom: 1em;
   }
 
-  .landing-page .bolded-phrase {
+  .header-container .bolded-phrase {
     margin-top: 0.3em;
   }
 
-  .landing-page .avatar {
+  .header-container .avatar {
     display: none;
   }
 }
