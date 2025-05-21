@@ -15,7 +15,7 @@ function App() {
   const isLoading = useLoading();
   const [showAlert, setShowAlert] = useState(true);
 
-  useEffect((duration = 5000) => {
+  useEffect((duration = 7000) => {
     const alert = setTimeout(() => {
       setShowAlert(false);
     }, duration);
