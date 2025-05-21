@@ -1,6 +1,5 @@
 import { Navbar, Nav, Container } from "react-bootstrap";
-
-import { LuBrainCircuit } from "react-icons/lu";
+import Logo from "../assets/logo.png";
 import "../../styles/NavBar.scss";
 
 function NavBar() {
@@ -8,8 +7,7 @@ function NavBar() {
     <Navbar expand="lg" variant="light" sticky="top">
       <Container>
         <Navbar.Brand href="#home">
-          <LuBrainCircuit style={{ marginRight: "8px" }} />
-          Ale Gutierrez
+          <img className="logo" src={Logo} alt="Logo" />
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="main-navbar-nav" />
         <Navbar.Collapse id="main-navbar-nav">

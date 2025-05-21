@@ -57,6 +57,7 @@
       text-decoration: none; // Remove underline from links
       margin: 0;
       color: #282a29;
+      transition: color 0.3s ease;
 
       &:hover {
         color: #d46bca;

@@ -1,4 +1,26 @@
 .navbar {
   font-family: "Parkinsans", sans-serif;
   background-color: #d8c5da;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+
+  .logo {
+    height: 50px;
+    width: auto;
+    margin-right: 1em;
+    transition: box-shadow 0.3s ease;
+    margin-left: -20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .navbar .logo {
+    height: 45px;
+  }
+}
+
+@media (max-width: 480px) {
+  .navbar .logo {
+    height: 35px;
+    margin-left: 0;
+  }
 }
