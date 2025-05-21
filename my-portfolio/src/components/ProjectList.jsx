@@ -10,7 +10,7 @@ function ProjectList() {
   return (
     <section id="projects">
       <h2 className="highlight">Take a look at my projects!</h2>
-      <ul className="projects-list">{parsedProjects}</ul>;
+      <ul className="projects-list">{parsedProjects}</ul>
     </section>
   );
 }
