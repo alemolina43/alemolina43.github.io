@@ -6,7 +6,6 @@
   align-items: center;
   flex-direction: row;
   box-sizing: border-box;
-  color: #553566;
 
   h2 {
     padding-left: 0.5em;
@@ -14,6 +13,7 @@
     width: 45vw;
     padding-right: 1em;
     margin: 0;
+    color: #637fb9;
   }
 
   .projects-list {
@@ -65,6 +65,7 @@
     h3 {
       margin: 0.2em 0; // Adjust vertical margin, remove horizontal margin
       word-break: break-word; // Allow long project names to break
+      font-size: 1em;
     }
     p {
       font-size: 0.9em;
