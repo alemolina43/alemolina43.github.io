@@ -1,5 +1,3 @@
-import { PiStarFourThin } from "react-icons/pi";
-
 import "../../styles/Articles.scss";
 
 function ArticlesListItem({ article }) {
