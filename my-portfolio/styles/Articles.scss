@@ -34,6 +34,7 @@
   max-width: calc(33.33% - 1.5em); // prevent overflow
   box-sizing: border-box;
   text-align: center; // Center text within the article container (including h3)
+  align-items: center;
 
   .article-thumbnail {
     width: 100%;
