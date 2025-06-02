@@ -10,7 +10,7 @@ function LandinPage() {
     <section className="landing-page" id="home">
       <div className="header-container">
         <div className="phrase-container">
-          <h1>
+          <h1 className="anim">
             Building websites that won&apos;t crash—
             <span className="bolded-phrase">
               unless you&apos;re trying to break them!
@@ -18,10 +18,10 @@ function LandinPage() {
           </h1>
         </div>
         <div className="avatar">
-          <img className="avatar" src={Avatar} alt="avatar" />
+          <img className="avatar anim" src={Avatar} alt="avatar" />
         </div>
       </div>
-      <footer>
+      <footer className="anim">
         <a href="mailto:alexmarket43@gmail.com">
           <MdEmail />
         </a>

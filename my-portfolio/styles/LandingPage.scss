@@ -7,6 +7,19 @@
   text-align: center; /* Center content horizontally */
   padding: 0 2em;
   justify-content: center;
+
+  .anim {
+    opacity: 0;
+    transform: translateY(30px);
+    animation: moveup 0.8s linear forwards;
+  }
+
+  @keyframes moveup {
+    100% {
+      opacity: 1;
+      transform: translateY(0px);
+    }
+  }
 }
 
 .header-container {
