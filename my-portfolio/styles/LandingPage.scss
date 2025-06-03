@@ -1,5 +1,6 @@
 .landing-page {
-  height: 100vh;
+  min-height: 100vh;
+  height: auto;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -33,7 +34,8 @@
     font-weight: 200;
     margin-left: 1em;
     margin: 0;
-    font-size: clamp(2rem, 5vw, 3rem);
+    font-size: clamp(2rem, 4vw + 0.5rem, 3rem);
+
     word-break: break-word;
     max-width: 100%;
     flex-shrink: 1;

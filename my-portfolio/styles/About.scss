@@ -1,10 +1,11 @@
 #about {
-  height: 100vh;
+  min-height: 100vh;
+  height: auto;
   padding: 1em;
   display: flex;
   flex-direction: row;
   background-color: #eb7d52;
-  font-size: 1.7em;
+  font-size: clamp(1rem, 1.5vw + 0.5rem, 1.7rem);
   align-items: center;
   justify-content: center; /* Center content horizontally */
   box-sizing: border-box; /* Crucial for padding/width calculations */
@@ -17,13 +18,17 @@
     flex-grow: 1; /* Allow summary to grow and take space */
     text-align: left; /* Default text alignment */
     h2 {
-      font-size: 3em;
+      font-size: clamp(2rem, 4vw + 0.5rem, 3rem);
       margin-bottom: 0.5em;
+    }
+
+    p {
+      font-size: clamp(1rem, 1.5vw + 0.3rem, 1.3rem);
     }
   }
 
   .profile {
-    width: clamp(12em, 20vw, 15em);
+    width: clamp(10em, 20vw, 15em);
     height: auto;
     object-fit: cover; /* keeps image from stretching */
     border-radius: 50% / 25%;
