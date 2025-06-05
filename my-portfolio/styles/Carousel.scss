@@ -22,6 +22,21 @@
   width: 100%;
   padding-top: 3.125rem;
 
+  .swiper-button-next,
+  .swiper-button-prev {
+    color: #553566;
+  }
+
+  .swiper-pagination-bullet {
+    background: white;
+    opacity: 0.5;
+  }
+
+  .swiper-pagination-bullet-active {
+    background: white;
+    opacity: 1;
+  }
+
   .myswiper-slider {
     position: relative;
     background-size: cover; // Optional: switch from 'contain' to 'cover' for better visual fill
