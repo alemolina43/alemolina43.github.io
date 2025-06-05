@@ -2,6 +2,7 @@ import MunchMatch from "../src/assets/munchMatch.png";
 import Quizzas from "../src/assets/quizzas.png";
 import Tweeter from "../src/assets/tweeter.png";
 import TinnyApp from "../src/assets/tinyApp.png";
+import FrontEndMentor from "../src/assets/frontend_mentor.png";
 
 const projectsData = [
   {
@@ -33,6 +34,14 @@ const projectsData = [
     link: "https://github.com/alemolina43/tinyapp",
     thumbNail: TinnyApp,
     description: "URL shortener with full user authentication.",
+  },
+
+  {
+    name: "Frontend Mentor",
+    link: "https://www.frontendmentor.io/profile/alemolina43",
+    thumbNail: FrontEndMentor,
+    description:
+      "Series of professionally designed challenges to practice front-end coding skills.",
   },
 ];
 
