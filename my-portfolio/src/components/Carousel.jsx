@@ -18,7 +18,7 @@ const Carousel = () => {
     <section className="carousel" id="projects">
       <div>
         <div className="carousel-content">
-          <h1>Take a look at my project!</h1>
+          <h1>Take a look at my projects!</h1>
         </div>
       </div>
       <Swiper
