@@ -1,0 +1,102 @@
+.carousel {
+  position: relative;
+  width: calc(min(90rem, 90%));
+  margin: 0 auto;
+  min-height: 100vh;
+  column-gap: 3rem;
+  padding-block: min(20vh, 3rem);
+
+  h1 {
+    font-size: clamp(3.5rem, 4vw + 0.5rem, 5rem);
+    color: #637fb9;
+    text-align: center;
+    font-weight: 600;
+  }
+}
+
+.myswiper {
+  width: 100%;
+  padding-top: 3.125rem;
+
+  .swiper-button-next,
+  .swiper-button-prev {
+    color: #553566;
+  }
+
+  .swiper-pagination-bullet {
+    background: white;
+    opacity: 0.5;
+  }
+
+  .swiper-pagination-bullet-active {
+    background: white;
+    opacity: 1;
+  }
+
+  .myswiper-slider {
+    position: relative;
+    background-size: cover; // Optional: switch from 'contain' to 'cover' for better visual fill
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    aspect-ratio: 16 / 9;
+
+    .slide-content {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      padding: 1.5rem;
+      opacity: 0;
+      pointer-events: none;
+      transition: opacity 0.3s ease;
+
+      //for readability
+      background: linear-gradient(
+        to top,
+        rgba(0, 0, 0, 0.85),
+        rgba(0, 0, 0, 0.3)
+      );
+
+      h2 {
+        font-size: clamp(0.5rem, 4vw + 0.5rem, 1rem);
+        font-weight: 600;
+        color: white;
+        margin-bottom: 0.5rem;
+      }
+
+      p {
+        font-size: clamp(0.2rem, 4vw + 0.5rem, 0.7rem);
+        color: #f0f0f0;
+        margin-bottom: 1rem;
+      }
+
+      a.slider-btn {
+        background: white;
+        color: black;
+        padding: 0.5rem 1rem;
+        font-size: clamp(0.2rem, 4vw + 0.5rem, 0.7rem);
+        border-radius: 10px;
+        font-weight: 500;
+        text-decoration: none;
+        width: fit-content;
+
+        &:hover {
+          background: #d46bca;
+        }
+      }
+    }
+  }
+
+  // Show only on active slide
+  .swiper-slide-active .slide-content {
+    opacity: 1;
+    pointer-events: auto;
+  }
+}
+
+@media screen {
+  .carousel h1 {
+    margin-bottom: 5rem;
+  }
+}

@@ -5,8 +5,8 @@ import Loading from "./components/Loading";
 import NavBar from "./components/NavBar";
 import LandinPage from "./components/LandingPage";
 import About from "./components/About";
-import ProjectList from "./components/ProjectList";
 import ArticlesList from "./components/ArticlesList";
+import Carousel from "./components/carousel";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "../styles/App.scss";
 
@@ -39,7 +39,7 @@ function App() {
       )}
       <LandinPage />
       <About />
-      <ProjectList />
+      <Carousel />
       <ArticlesList />
     </>
   );
