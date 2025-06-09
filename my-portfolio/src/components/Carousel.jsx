@@ -52,9 +52,9 @@ const Carousel = () => {
           },
         }}
       >
-        {projectsData.map((project) => (
+        {projectsData.map((project, index) => (
           <SwiperSlide
-            key={project.title}
+            key={index}
             className="myswiper-slider"
             style={{ backgroundImage: `url(${project.thumbNail}) ` }}
           >
