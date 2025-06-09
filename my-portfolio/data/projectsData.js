@@ -2,7 +2,8 @@ import MunchMatch from "../src/assets/munchMatch.png";
 import Quizzas from "../src/assets/quizzas.png";
 import Tweeter from "../src/assets/tweeter.png";
 import TinnyApp from "../src/assets/tinyApp.png";
-import FrontendMentor from "../src/assets/frontend_mentor.png";
+import FrontEndMentor from "../src/assets/frontend_mentor.png";
+
 
 const projectsData = [
   {
@@ -37,10 +38,18 @@ const projectsData = [
   },
 
   {
+<<<<<<< HEAD
     title: "Frontend Mentor",
     url: "https://www.frontendmentor.io/profile/alemolina43",
     thumbNail: FrontendMentor,
     description: "Platform with practical, frontend project-based challenges.",
+=======
+    name: "Frontend Mentor",
+    link: "https://www.frontendmentor.io/profile/alemolina43",
+    thumbNail: FrontEndMentor,
+    description:
+      "Series of professionally designed challenges to practice front-end coding skills.",
+>>>>>>> master
   },
 ];
 
